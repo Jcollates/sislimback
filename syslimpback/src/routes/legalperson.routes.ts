@@ -1,10 +1,10 @@
 import { Router} from 'express';
 
 const router = Router();
-import {getLegalperson} from '../controllers/legalperson.controller';
+import {addLegalperson, getLegalperson} from '../controllers/legalperson.controller';
 
 router.get('/legalperson', getLegalperson);
-// router.get('/users/:id', );
+router.post('/addLegalperson', addLegalperson );
 // router.post('/users', );
 // router.put('/users', );
 // router.delete('/users:id', );

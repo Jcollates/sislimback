@@ -4,7 +4,7 @@ export class Employee{
     @PrimaryGeneratedColumn({name: "seqemploy"})
     seqemploy: number;
     @Column({name: "dni"})
-    dni: number;
+    dni: string;
     @Column({name: "name"})
     name: string;
     @Column({name: "lastname"})
@@ -12,7 +12,7 @@ export class Employee{
     @Column({name: "position"})
     position: string;
     @Column({name: "birthday"})
-    birthday: Date;
+    birthday: string;
     @Column({name: "assigmentdayte"})
     assigmentdayte: Date;
     @Column({name: "img"})
@@ -21,5 +21,7 @@ export class Employee{
     datelastmodify: Date;
     @Column({name: "datecreate"})
     datecreate: Date;
+    @Column({name: "contractday"})
+    contractday: string;
 
 }

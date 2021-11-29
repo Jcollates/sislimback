@@ -5,3 +5,9 @@ export const getEmployees = async (req: Request, res: Response): Promise<Respons
     const employees = await getRepository(Employee).find();
     return res.json(employees);
 }
+
+export const createEmployee  = async (req: Request, res: Response): Promise<Response> =>{
+    const whatSAve = await getRepository(Employee).save(req.body);
+    return res.json(whatSAve);
+    
+}

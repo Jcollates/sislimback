@@ -4,7 +4,7 @@ export class LegalPerson{
     @PrimaryGeneratedColumn({name: "seqlegalperson"})
     seqlegalperson: number;
     @Column({name: "dni"})
-    dni: number;
+    dni: string;
     @Column({name: "name"})
     name: string;
     @Column({name: "lastname"})
@@ -14,7 +14,7 @@ export class LegalPerson{
     @Column({name: "homeadrees"})
     homeadrees: string;
     @Column({name: "phonenumber"})
-    phonenumber: number;
+    phonenumber: string;
     @Column({name: "datecreate"})
     datecreate: Date;
     @Column({name: "datelastmodify"})
