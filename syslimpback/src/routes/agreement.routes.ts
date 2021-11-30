@@ -6,7 +6,6 @@ import {addAgreement, getAgreements} from '../controllers/agreement.controllers'
 router.get('/agreements', getAgreements);
 router.post('/addAgreements', addAgreement);
 // router.post('/users', );
-// router.put('/users', );
 // router.delete('/users:id', );
 
 
