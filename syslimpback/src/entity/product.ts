@@ -5,6 +5,8 @@ export class Product{
     seqprod: number;
     @Column({name: "name"})
     name: string;
+    @Column({name: "description"})
+    description: string;
     @Column({name: "quantity"})
     quantity: number;
     @Column({name: "pricebought"})
@@ -13,8 +15,6 @@ export class Product{
     saleprice: number;
     @Column({name: "datebought"})
     datebought: Date;
-    @Column({name: "image"})
-    image: string;
     @Column({name: "meet_seqmeet"})
     meet_seqmeet: number;
 }
