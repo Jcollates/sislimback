@@ -35,6 +35,7 @@ export const createUser  = async (req: Request, res: Response): Promise<Response
     const loginUSer ={
         username: req.body.username,
         password: await bcrypt.hash(req.body.password, saltRounds),
+        token: req.body.token,
         salt: salt,
         changepassnextenter: req.body.changepassnextenter,
         duedatepass: req.body.duedatepass ,
@@ -47,3 +48,7 @@ export const createUser  = async (req: Request, res: Response): Promise<Response
     return res.json(whatSAve);
     
 }
+// export const getLoggedUser = async (req: Request, res: Response): Promise<Response> =>{
+//     const loginUsers = await getRepository(LoginUser).findOne({});
+//     return res.json(loginUsers);
+// }

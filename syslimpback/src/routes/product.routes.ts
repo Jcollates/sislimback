@@ -1,13 +1,11 @@
 import { Router} from 'express';
 
 const router = Router();
-import {getProducts, saveProduct} from '../controllers/product.controller';
+import {getProducts, saveProduct, getEspecifictProduct} from '../controllers/product.controller';
 
 router.get('/products', getProducts);
 router.post('/addProducts',  saveProduct);
-// router.get('/users/:id', );
-// router.put('/users', );
-// router.delete('/users:id', );
+router.get('/getUniqueProduct/:codeproduct',  getEspecifictProduct);
 
 
 
