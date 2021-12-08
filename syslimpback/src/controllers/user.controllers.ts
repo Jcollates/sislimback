@@ -13,3 +13,7 @@ export const saveNewUser= async (req: Request, res: Response): Promise<Response>
     const user = await getRepository(User).save(req.body);
     return res.json(user);
 }
+export const updateUserData = async (req: Request, res: Response): Promise<Response> =>{
+    const user = await getRepository(User).save(req.body);
+    return res.json(user);
+}
