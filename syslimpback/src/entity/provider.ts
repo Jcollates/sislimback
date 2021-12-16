@@ -3,8 +3,8 @@ import {Entity,Column, PrimaryGeneratedColumn} from 'typeorm';
 export class Provider{
     @PrimaryGeneratedColumn({name: "seqprovider"})
     seqprovider: number;
-    @Column({name: "nementerprice"})
-    nementerprice: string;
+    @Column({name: "namenterprice"})
+    namenterprice: string;
     @Column({name: "email"})
     email: string;
     @Column({name: "location"})
@@ -14,7 +14,7 @@ export class Provider{
     @Column({name: "city"})
     city: string;
     @Column({name: "phone"})
-    phone: number;
+    phone: string;
     @Column({name: "detail"})
     detail: string;
     @Column({name: "paytype"})
@@ -25,4 +25,6 @@ export class Provider{
     datecreate: Date;
     @Column({name: "datelastmodify"})
     datelastmodify: Date;
+    @Column({name: "dni"})
+    dni: string;
 }

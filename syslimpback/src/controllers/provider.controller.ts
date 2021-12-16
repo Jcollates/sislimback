@@ -5,3 +5,9 @@ export const getProviders = async (req: Request, res: Response): Promise<Respons
     const providers = await getRepository(Provider).find();
     return res.json(providers);
 }
+
+export const createProvider  = async (req: Request, res: Response): Promise<Response> =>{
+    const whatSAve = await getRepository(Provider).save(req.body);
+    return res.json(whatSAve);
+    
+}

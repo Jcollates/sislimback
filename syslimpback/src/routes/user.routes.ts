@@ -1,12 +1,12 @@
 import { Router} from 'express';
 
 const router = Router();
-import {getUsers} from '../controllers/user.controllers';
+import {getUniqueUSer, getUsers, saveNewUser, updateUserData} from '../controllers/user.controllers';
 
 router.get('/users', getUsers);
-// router.get('/users/:id', );
-// router.post('/users', );
-// router.put('/users', );
+router.get('/users/:loginuser_codeuser', getUniqueUSer);
+router.post('/saveNewUser',  saveNewUser);
+router.post('/updateDataUser', updateUserData );
 // router.delete('/users:id', );
 
 

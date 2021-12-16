@@ -10,7 +10,7 @@ export class User{
     @Column({name: "email"})
     email: string;
     @Column({name: "phonenumber"})
-    phonenumber: number;
+    phonenumber: string;
     @Column({name: "province"})
     province: string;
     @Column({name: "city"})

@@ -9,4 +9,8 @@ export class GeneralCat{
     nameItem: string;
     @Column({name: "decription"})
     decription: string;
+    @Column({name: "codeFather"})
+    codeFather: string;
+    @Column({name: "codeCatFather"})
+    codeCatFather: string;
 }

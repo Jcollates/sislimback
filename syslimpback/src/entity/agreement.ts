@@ -4,7 +4,7 @@ export class Agreement{
     @PrimaryGeneratedColumn({name: "seqagree"})
     seqagree: number;
     @Column({name: "ruc"})
-    ruc: number;
+    ruc: string;
     @Column({name: "name"})
     name: string;
     @Column({name: "location"})
@@ -12,13 +12,13 @@ export class Agreement{
     @Column({name: "principallocation"})
     principallocation: string;
     @Column({name: "phone"})
-    phone: number;
+    phone: string;
     @Column({name: "type"})
     type: string;
     @Column({name: "datestart"})
-    datestart: Date;
+    datestart: string;
     @Column({name: "dateend"})
-    dateend: Date;
+    dateend: string;
     @Column({name: "schedule"})
     schedule: string;
     @Column({name: "servicedetail"})
