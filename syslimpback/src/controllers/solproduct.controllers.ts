@@ -13,3 +13,7 @@ export const getSolProdcutByUser= async (req: Request, res: Response): Promise<R
     const solProducts = await getRepository(SolProduct).find({codeuser: Number(req.params.codeuser) });
     return res.json(solProducts);
 }
+export const updateSoltPro= async (req: Request, res: Response): Promise<Response> =>{
+    const solProducts = await getRepository(SolProduct).save(req.body);
+    return res.json(solProducts);
+}
